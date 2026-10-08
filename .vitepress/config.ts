@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'Official documentation for the VeloxRouter ecosystem',
   base: '/docs/',
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/getting-started' },

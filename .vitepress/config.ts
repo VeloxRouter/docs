@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'VeloxRouter',
   description: 'Official documentation for VeloxRouter ecosystem',
+  base: '/docs/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

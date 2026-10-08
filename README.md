@@ -9,10 +9,10 @@ This repository (`veloxrouter/docs`) houses the centralized documentation site f
 ## 📦 Documented Packages
 
 * **[Router Core](https://github.com/VeloxRouter/router)**: High-performance routing engine with static $O(1)$ matching and dynamic parameters.
-* **[Middlewares](https://www.google.com/search?q=https://github.com/VeloxRouter/middlewares)**: Enterprise-grade middleware collection (security, rate limiting, logging, transactions).
-* **[SSE Streaming](https://www.google.com/search?q=https://github.com/VeloxRouter/sse)**: Zero-dependency Server-Sent Events for real-time web streams.
-* **[Validator](https://www.google.com/search?q=https://github.com/VeloxRouter/validator)**: Lightweight validation engine with multi-language support.
-* **[RPC Microservices](https://www.google.com/search?q=https://github.com/VeloxRouter/rpc)**: JSON-RPC 2.0 communication and dispatching clients.
+* **[Middlewares](https://github.com/VeloxRouter/middlewares)**: Enterprise-grade middleware collection (security, rate limiting, logging, transactions).
+* **[SSE Streaming](https://github.com/VeloxRouter/sse)**: Zero-dependency Server-Sent Events for real-time web streams.
+* **[Validator](https://github.com/VeloxRouter/validator)**: Lightweight validation engine with multi-language support.
+* **[RPC Microservices](https://github.com/VeloxRouter/rpc)**: JSON-RPC 2.0 communication and dispatching clients.
 
 ## 🛠️ Local Development & Contribution
 

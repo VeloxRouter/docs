@@ -2,19 +2,32 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'VeloxRouter',
-  description: 'Official documentation for VeloxRouter ecosystem',
+  description: 'Official documentation for the VeloxRouter ecosystem',
   base: '/docs/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Packages', link: '/packages/middlewares' }
+      { text: 'Guide', link: '/guide/getting-started' },
+      { text: 'Packages', link: '/packages/router' }
     ],
     sidebar: {
+      '/guide/': [
+        {
+          text: 'Introduction',
+          items: [
+            { text: 'Getting Started', link: '/guide/getting-started' }
+          ]
+        }
+      ],
       '/packages/': [
         {
-          text: 'Packages',
+          text: 'Ecosystem Packages',
           items: [
-            { text: 'Middlewares', link: '/packages/middlewares' }
+            { text: 'Router Core', link: '/packages/router' },
+            { text: 'SSE Streaming', link: '/packages/sse' },
+            { text: 'Middlewares', link: '/packages/middlewares' },
+            { text: 'Validator', link: '/packages/validator' },
+            { text: 'JSON-RPC', link: '/packages/rpc' }
           ]
         }
       ]

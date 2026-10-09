@@ -1,3 +1,9 @@
+# VeloxRouter Validator
+
+A high-performance, lightweight, and zero-dependency validation engine built for PHP 8.2+. Designed to be completely framework-agnostic and easy to use across web applications, APIs, CLI commands, or microservices.
+
+---
+
 ## Installation
 
 ```bash
@@ -11,7 +17,7 @@ composer require veloxrouter/validator
 
 ### 1. Standalone Validation Example
 
-Aqui tens um exemplo básico de como inicializar o validador com dados e regras, verificando falhas e obtendo os erros estruturados:
+Here is a basic example of how to initialize the validator with data and rules, check for failures, and retrieve structured errors:
 
 ```php
 <?php
@@ -48,7 +54,7 @@ if ($validator->fails()) {
 
 ### 2. Integration inside a VeloxRouter Endpoint
 
-Podes utilizar facilmente o validador dentro de uma rota HTTP para validar o payload recebido e retornar uma resposta formatada em JSON caso os dados sejam inválidos:
+You can easily use the validator inside an HTTP route to validate the incoming payload and return a formatted JSON response if the data is invalid:
 
 ```php
 <?php
@@ -107,15 +113,15 @@ $router->post('/api/users', function ($request, $response) {
 
 ## Custom Messages & Localization
 
-You can specify custom error messages per field/rule or change the default language via the constructor locale parameter (`'pt'` ou `'en'`).
+You can specify custom error messages per field/rule or change the default language via the constructor locale parameter (`'pt'` or `'en'`).
 
 ```php
 $messages = [
-    'email.required' => 'O endereço de email é obrigatório.',
-    'email.email'    => 'Por favor, introduza um email válido.'
+    'email.required' => 'The email address is required.',
+    'email.email'    => 'Please enter a valid email address.'
 ];
 
-$validator = new Validator($data, $rules,$messages, 'pt');
+$validator = new Validator($data, $rules,$messages, 'en');
 
 ```
 
